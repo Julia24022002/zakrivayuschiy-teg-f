@@ -50,11 +50,13 @@
 
 .like-icon.is-liked .main-body {
   fill: var(--red);
-  transition: fill 0.3s linear;
+  transition: fill 0.3s 0.05s linear;
 }
 
 /* контур */
+
 .like-icon .contour {
+  fill: var(--accent-color);
   transition: fill 0.1s linear;
 }
 
@@ -64,14 +66,19 @@
 }
 
 /* искры */
+.sparks {
+  fill: var(--red);
+  opacity: 0;
+}
+
 .like-icon.is-liked .sparks {
-  animation: heart-sparks 0.3s 0.3s ease-in;
+  animation: heart-sparks 0.3s 0.3s ease-in alternate 1;
 }
 
 /* масштабирование */
 .like-icon.is-liked .heart {
   transform-origin: center;
-  animation: heart-scale 0.3s 0.1s ease-in;
+  animation: heart-scale 0.3s 0.1s ease-in alternate 1;
 }
 
 @keyframes arrow {

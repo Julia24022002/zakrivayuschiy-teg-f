@@ -1,7 +1,7 @@
 /* В этом файле вы опишете значения переменных в разных цветовых схемах.
 Придерживайтесь такого именования классов: */
 
-.theme-dark {
+:root.theme-dark {
   --font-wight-h: 785;
   --font-wight-p: 465;
   --Themes-background: #000;
@@ -35,7 +35,7 @@
   }
 }
 
-.theme-light {
+:root.theme-light {
   --font-wight-h: 700;
   --font-wight-p: 400;
   --Themes-background: #fff;
