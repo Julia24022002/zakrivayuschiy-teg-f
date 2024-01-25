@@ -166,7 +166,6 @@
   .img-label {
     -webkit-text-stroke: 1px var(--color-label);
     text-shadow: 1px var(--color-label);
-    text-shadow: none;
   }
 }
 
@@ -236,13 +235,6 @@
 .like-icon {
   width: 39px;
   height: 36px;
-}
-
-.card__icon-button {
-  background-color: transparent;
-  border: 2px solid transparent;
-  max-block-size: 38px;
-  padding: 0;
 }
 
 .card__like-button {
@@ -318,11 +310,16 @@
 
 .card__icon-button {
   transition: border 0.3s ease;
+  background-color: transparent;
+  border: 2px solid transparent;
+  max-block-size: 38px;
+  padding: 0;
 }
 
 .card__icon-button:focus {
   outline: none;
 }
+
 .card__icon-button:focus-visible {
   border: 2px solid var(--accent-color);
 }
@@ -332,6 +329,7 @@
   opacity: 0.75;
   background: var(--Themes-mainColor, #000);
 }
+
 /* все окно */
 .dialog-window {
   background-color: var(--Themes-background);
