@@ -4,10 +4,10 @@
 :root.theme-dark {
   --font-wight-h: 785;
   --font-wight-p: 465;
-  --Themes-background: #000;
-  --Themes-mainColor: #00cc14;
+  --themes-background: #000;
+  --themes-mainColor: #00cc14;
   --accent-color: #00cc14;
-  --background-color-button: var(--Themes-mainColor);
+  --background-color-button: var(--themes-mainColor);
   --background-image: repeating-linear-gradient(
       to left,
       #000 0 2px,
@@ -21,10 +21,10 @@
   :root {
     --font-wight-h: 785;
     --font-wight-p: 465;
-    --Themes-background: #000;
+    --themes-background: #000;
     --accent-color: #00cc14;
-    --Themes-mainColor: #00cc14;
-    --background-color-button: var(--Themes-mainColor);
+    --themes-mainColor: #00cc14;
+    --background-color-button: var(--themes-mainColor);
     --background-image: repeating-linear-gradient(
         to left,
         #000 0 2px,
@@ -38,10 +38,10 @@
 :root.theme-light {
   --font-wight-h: 700;
   --font-wight-p: 400;
-  --Themes-background: #fff;
-  --Themes-mainColor: #000;
+  --themes-background: #fff;
+  --themes-mainColor: #000;
   --accent-color: #000;
-  --background-color-button: var(--Themes-background);
+  --background-color-button: var(--themes-background);
   --background-image: repeating-linear-gradient(
       to left,
       #d3d3d3 0 2px,

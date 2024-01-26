@@ -1,15 +1,15 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 :root {
-  --font-family-PressStart2P: 'PressStart2P';
-  --font-family-Inter: 'Inter';
+  --main-font: 'PressStart2P';
+  --accent-font: 'Inter';
   --font-wight-h: 700;
   --font-wight-p: 400;
   --accent-color: #000;
-  --Themes-background: #fff;
-  --Themes-mainColor: #000;
-  --color-label: var(--Themes-background);
-  --red: #ff0000;
-  --background-color-button: var(--Themes-background);
+  --themes-background: #fff;
+  --themes-mainColor: #000;
+  --color-label: var(--themes-background);
+  --color-heart: #ff0000;
+  --background-color-button: var(--themes-background);
   --background-image: repeating-linear-gradient(
       to left,
       #d3d3d3 0 2px,

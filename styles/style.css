@@ -18,10 +18,10 @@
   padding: 102px 0px clamp(6.375rem, 6.309rem + 0.2817vw, 6.5625rem);
   min-inline-size: 320px;
   min-block-size: 100dvb;
-  font-family: var(--font-family-Inter, sans-serif);
-  font-variation-settings: 'wdth' var(--font-wight-p);
-  background-color: var(--Themes-background);
-  color: var(--Themes-mainColor);
+  font-family: var(--accent-font, sans-serif);
+  font-variation-settings: 'wght' var(--font-wight-p);
+  background-color: var(--themes-background);
+  color: var(--themes-mainColor);
   background-attachment: fixed;
   background-size: cover;
   background-image: var(--background-image);
@@ -37,7 +37,7 @@
   outline: 2px solid currentColor;
   margin-block-end: 104px;
   padding: clamp(7.5rem, 7.1479rem + 1.5023vw, 8.5rem) 0px 25px; /* 120px-136px */
-  background-color: var(--Themes-background);
+  background-color: var(--themes-background);
 }
 
 .content {
@@ -45,7 +45,7 @@
 }
 
 .header_logo {
-  font-family: var(--font-family-PressStart2P, fantasy);
+  font-family: var(--main-font, fantasy);
   font-style: normal;
   font-weight: 400;
   text-transform: uppercase;
@@ -55,7 +55,7 @@
 }
 
 .header_title {
-  font-family: var(--font-family-PressStart2P, fantasy);
+  font-family: var(--main-font, fantasy);
   font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
   font-weight: 400;
   text-transform: uppercase;
@@ -71,7 +71,7 @@
 }
 
 .theme-menu__button {
-  font-family: var(--font-family-PressStart2P, fantasy);
+  font-family: var(--main-font, fantasy);
   border: none;
   background-color: transparent;
   height: 14px;
@@ -131,16 +131,15 @@
 
 .card {
   outline: 2px solid currentColor;
-  background-color: var(--Themes-background);
+  background-color: var(--themes-background);
 }
 
 .accent-text {
-  color: var(--Themes-mainColor, #000);
-  font-family: var(--font-family-Inter, sans-serif);
-  font-variation-settings: 'wdth' var(--font-wight-p);
+  color: var(--themes-mainColor, #000);
+  font-family: var(--accent-font, sans-serif);
+  font-variation-settings: 'wght' var(--font-wight-h);
   font-size: 18px;
   font-style: normal;
-  font-weight: 700;
   line-height: normal;
   width: clamp(21.9375rem, 15.0933rem + 29.2019vw, 41.375rem);
   padding: 4px 10px 4px 10px;
@@ -149,7 +148,7 @@
 .img-label {
   position: absolute;
   color: inherit;
-  font-family: var(--font-family-PressStart2P, fantasy);
+  font-family: var(--main-font, fantasy);
   font-size: 14px;
   font-weight: inherit;
   line-height: inherit;
@@ -166,6 +165,7 @@
   .img-label {
     -webkit-text-stroke: 1px var(--color-label);
     text-shadow: 1px var(--color-label);
+    text-shadow: none;
   }
 }
 
@@ -190,7 +190,7 @@
 }
 
 .filter-opacity {
-  filter: opacity (0.7);
+  filter: opacity(0.7);
 }
 
 .filter-saturate {
@@ -216,11 +216,11 @@
 }
 
 .text {
-  color: var(--Themes-mainColor, #000);
-  font-family: var(--font-family-Inter, sans-serif);
+  color: var(--themes-mainColor, #000);
+  font-family: var(--accent-font, sans-serif);
   font-size: 18px;
   font-style: normal;
-  font-weight: var(--font-wight-p);
+  font-variation-settings: 'wght' var(--font-wight-p);
   line-height: 21px;
 }
 
@@ -248,8 +248,8 @@
 }
 
 .button__text {
-  color: var(--Themes-mainColor, #000);
-  font-family: var(--font-family-PressStart2P, fantasy);
+  color: var(--themes-mainColor, #000);
+  font-family: var(--main-font, fantasy);
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -258,7 +258,7 @@
 
 .button-content {
   border: 2px solid var(--accent-color);
-  background-color: var(--Themes-background);
+  background-color: var(--themes-background);
   position: relative;
   overflow: hidden;
   transition: box-shadow 0.3s ease;
@@ -332,7 +332,7 @@
 
 /* все окно */
 .dialog-window {
-  background-color: var(--Themes-background);
+  background-color: var(--themes-background);
   border: 2px solid var(--accent-color);
   inline-size: clamp(21.3125rem, 20.9604rem + 1.5023vw, 22.3125rem);
   padding-block: 31px;
@@ -351,7 +351,7 @@
 .content-text {
   color: var(--accent-color);
   flex: 1 1 0;
-  font-family: var(--font-family-PressStart2P, fantasy);
+  font-family: var(--main-font, fantasy);
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -372,6 +372,8 @@
 
 .dialog-floppy {
   fill: var(--accent-color);
+  width: 39;
+  height: 39;
 }
 
 @media (width <= 1240px) {
