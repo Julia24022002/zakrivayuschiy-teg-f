@@ -372,8 +372,8 @@
 
 .dialog-floppy {
   fill: var(--accent-color);
-  width: 39;
-  height: 39;
+  width: 39px;
+  height: 39px;
 }
 
 @media (width <= 1240px) {
